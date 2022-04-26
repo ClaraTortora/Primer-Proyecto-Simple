@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*HEADER*/
+header .container {
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.logo span {
+    color: lightblue;
+}
+
+nav a {
+    font-size: 1.1em;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    text-align: right;
+    align-items: right;
+    justify-content: right;
+}
+
+nav a:hover {
+    color: lightcoral;
+}
+
+
+/*SECCIÓN QUIÉN SOY*/
+.section1 {
+    text-align: center;
+    background-color: rgb(251, 203, 203);
+    padding: 20px;
+}
+
+section h1 {
+    background-color: lightblue;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.img-section1 {
+    padding-top: 30px;
+}
+
+section img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 3px dotted rgb(180, 78, 78);
+    justify-content: center;
+}
+
+.section1 p {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.h3-bold {
+    margin: 7px 7px;
+    text-decoration: underline;
+}
+
+
+/*SECCIÓN CUALES SON MIS GUSTOS*/
+
+.section2 {
+    background-color: azure;
+    padding: 20px;
+}
+
+.section2 h2 {
+    font-size: 3em;
+    background-color: rgb(48, 213, 196);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    border: 1px solid black;
+}
+
+.section2 h3 {
+    background-color: rgb(153, 164, 176);
+    border: 0.5px solid black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 4px;
+}
+
+/*SECCIÓN SOBRE MIS PÁGINAS*/
+.section3 {
+    background-color: black;
+    height: 90vh;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.section3 h2 {
+    color: white;
+    font-size: 3.2em;
+    padding: 30px;
+}
+
+button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    transition: 1s;
+}
+
+button:hover {
+    background-color: rgb(250, 170, 170);
+    transition: 0.4s;
+}
+
+/*SECCIÓN VIDEOJUEGOS FAVORITOS*/
+
+.section4{
+    background-color: antiquewhite;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.section4 h2{
+    font-size: 2.5em;
+    color: black;
+    padding: 10px;
+    text-decoration: underline wavy pink 3px;
+}
+
+.section4 .container{
+    padding: 40px 8px;
+    margin: auto;
+}
+
+.section4 .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 0;
+    margin: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(0deg, 
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('../assets/valorant.jpg');
+    }
+
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg, 
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('../assets/league.jpg');
+    }
+
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg, 
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('../assets/apex.jpg');
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(0deg, 
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('../assets/dead.jfif');
+}
+
+.carta h3{
+    color: white;
+    font-size: 1.8em;
+}
+
+/*SECCIÓN FOOTER*/
+.footer{
+    background-color: black;
+    padding: 20px;
+}
+
+.footer-p{
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 800px){
+    header .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav a{
+        padding: 15px;
+    }
+
+    /*SECCIÓN 1*/
+    .section1 h1{
+        background-color: rgba(137, 43, 226, 0.153);
+        border-radius: 0px;
+    }
+    
+    .section1{
+        background-color: rgba(0, 0, 0, 0.13);
+    }
+
+    .img-section1{
+        display: flex;
+    }
+
+    .img-section1 img{
+        width: 420px;
+        height: 420px;
+        border-radius: 20%;
+        border: 2px solid black;
+    }
+
+    .section1 .textos{
+        display: flex;
+    }
+
+    .textos .h3-bold{
+        font-size: 3em;
+        padding-left: 110px;
+    }
+
+    .textos p{
+       font-weight: bold;
+       font-size: 1.5em;
+       justify-content: center;
+       text-align: initial;
+    }
+
+    /*SECCIÓN 2*/
+   .section2{
+       display: flex;
+   }
+   
+   .section2 h2{
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+   }
+
+   .container-divs{
+       display: flex;
+   }
+
+    /*SECCIÓN 3*/
+   .container .img-container{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)), url("../assets/1593277333_Tencent-construye-rivales-de-Twitch-atrae-a-los-streamers-con.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 42%;
+    box-shadow: 3px 6px 12px white;
+
+}
+}
